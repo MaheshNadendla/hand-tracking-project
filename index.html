@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Tracking</title>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    <script src="track/hands_solution_packed_assets_loader.js" defer></script>
+    <script src="track/hands_solution_simd_wasm_bin.js" defer></script>
+    <script src="js/camera_utils.js" defer></script>
+    <script src="js/hands.js" defer></script>
+    <script src="js/drawing_utils.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        video {
+            border: 2px solid #333;
+            border-radius: 8px;
+        }
+
+        canvas {
+            position: absolute;
+            border: 2px solid #333;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <video id="video" width="640" height="480" autoplay></video>
+    <canvas id="canvas" width="640" height="480"></canvas>
+
+    <script>
+        // Your custom JavaScript can go here
+    </script>
+</body>
+</html>
